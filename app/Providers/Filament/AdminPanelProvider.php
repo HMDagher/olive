@@ -38,11 +38,11 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 AccountWidget::class,
-                FilamentInfoWidget::class,
+                // FilamentInfoWidget::class,
             ])
             ->unsavedChangesAlerts()
-            ->brandLogo(fn () => view('filament.app.logo'))
-            ->brandLogoHeight('1.25rem')
+            // ->brandLogo(fn () => view('filament.app.logo'))
+            // ->brandLogoHeight('1.25rem')
             ->navigationGroups([
                 'Shop',
                 'Blog',
@@ -68,7 +68,7 @@ class AdminPanelProvider extends PanelProvider
             )
             ->spa()
             ->colors([
-                'primary' => Color::Blue,
+                'primary' => Color::Green,
             ]);
     }
 }
