@@ -68,7 +68,7 @@ class AdminPanelProvider extends PanelProvider
             )
             ->spa()
             ->colors([
-                'primary' => Color::Green,
+                'primary' => '#808000',
             ]);
     }
 }
